@@ -1,7 +1,7 @@
 class Solution {
     public String convertToBase7(int num) {
         StringBuffer cal = new StringBuffer("");
-        if(n==0)
+        if(num==0)
             return "0";
         Boolean ans = true;
         if(num < 0)
@@ -18,7 +18,7 @@ class Solution {
             return cal.toString();
         else
             {
-                cal.append("-");
+                cal.insert(0,"-");
                 return cal.toString();
             }
     }
